@@ -1,0 +1,273 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>SISMA - Ministério da Saúde</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link type="image/x-icon" href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <div id="inicio"></div>
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top sticky-top-main p-0 px-2 px-lg-3">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img class="img-fluid ms-lg-5 mx-2" src="img/emblema.png" alt="" style="width: 45px;">
+            <div class="text-center navbar-logo-text">
+                <h5 class="m-0 text-dark mt-1">Ministério da Saúde</h5>
+                <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Direção de Planificação e Cooperação</h6>
+                <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Departamento de Informação de Saúde</h6>
+            </div>
+        </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-4 py-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Início</a>
+                    <a href="dicionario.html" class="nav-item nav-link">Dicionário de Metadados</a>
+                    <a href="interoperability.html" class="nav-item nav-link">Plataformas de Interoperabilidade</a>
+                    <a href="docs.html" class="nav-item nav-link">Documentos</a>
+                    <a href="portal.html" class="nav-item nav-link">Portal</a>
+                    <div class="nav-item dropdown for-desktop">
+                        <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span>Acesso às plataformas</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+                            <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+                            <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+                            <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+                            <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+                            <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+                                <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+                                </ul>
+                    </div>
+                    <div class="nav-item dropdown for-mobile">
+                        <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false"><span>Acesso às plataformas</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <div class="dropdown-menu">
+                            <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+                            <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+                            <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+                            <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+                            <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+                            <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+                                <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+                                </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- About Start -->
+        <div class="container">
+            <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="pt-5 mt-4">
+                    <div class="text-start">
+                        <a target="_blank" href="https://sisma.misau.gov.mz/prod/" class="text-dark">
+                            <h2 class="display-6 page-title-link">Sistema de Informação de Vigilância Epidemiológica (SIVE)
+                            </h2>
+                        </a>
+                        <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-3 "></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-end">
+                <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="text-dark text-justified " style="font-size: 17px">
+                        O Sistema de Informação de Vigilância Epidemiológica (SIVE) é um módulo projectado para
+                        colectar, analisar e interpretar dados epidemiológicos em tempo real, permitindo uma resposta
+                        rápida e eficaz a surtos de doenças, bem como o registo de dados de campanhas de vacinação
+                        contra doenças de vigilância.
+                        <!-- <br />
+                        <br /> -->
+                    </p>
+                    <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+                        No processo de inserção de dados, as unidades organizacionais, como centros de saúde e hospitais,
+                        registam informações detalhadas sobre casos de doenças notificáveis, surtos e eventos de saúde
+                        pública. Este processo é desencadeado com recurso a dispositivos moveis com acesso ao DHIS2 onde os
+                        profissionais de saúde podem inserir rapidamente informações atualizadas sobre casos confirmados,
+                        óbitos, testes realizados e outras métricas relevantes, permitindo uma vigilância epidemiológica em
+                        tempo real facilitando a implementação de medidas de controle e prevenção oportunas.
+                    </p>
+                    <div class="align-items-center d-flex col-lg-12 mb-5 flex-column" style="justify-content: center; align-items: center;">
+                        <img class="img-fluid" src="img/sive_3.jpeg" alt="">
+                        <span style="font-size:small;" class="text-dark">Gráfico ilustrativo sobre número de vacinados por gênero</span>
+                    </div> 
+            
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                        O SIVE oferece a possibilidade de análise avançada de dados. A plataforma utiliza os recursos
+                        analíticos do DHIS2 para gerar relatórios automatizados, gráficos e mapas interativos. Isso permite
+                        que os profissionais de saúde visualizem tendências, identifiquem padrões e avaliem o impacto das
+                        intervenções de saúde pública no controle de surtos. A análise dos dados epidemiológicos auxilia na
+                        identificação precoce de surtos, na implementação de medidas de controle adequadas e no
+                        monitoramento da disseminação das doenças.
+                    </p>
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                        O SIVE desempenha também um papel fundamental na coordenação do processo de vacinação em massa. A
+                        plataforma é usada para registar dados sobre a vacinação, como o número de doses administradas,
+                        grupos prioritários, locais de vacinação e outros detalhes relevantes. Esses dados são cruciais para
+                        monitorar o progresso da campanha de vacinação, identificar lacunas na cobertura e garantir uma
+                        distribuição equitativa das vacinas.
+
+                    </p>
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                        No caso de coleta de dados de vacinação, a inserção de dados é feito com recurso a um aplicativo de
+                        entrada de dados instalado em dispositivos móveis que flexibiliza a inserção de dados por bairros.
+                        No terreno, as equipas de vacinação, distribuídas em diferentes bairros, fazem o registo dos dados
+                        nas fichas físicas e no final do dia, o responsável por cada equipa encarregava-se de organizar e
+                        entregar as fichas a um supervisor distrital, este, por sua vez, acede ao aplicativo com recurso a
+                        um dispositivo móvel para inserir os dados de vacinação colectados no respectivo dia para cada
+                        bairro onde a vacinação teve lugar.
+                    </p>
+                    <div class="align-items-center d-flex col-lg-12 mb-5 flex-column" style="justify-content: center; align-items: center;">
+                        <img class="img-fluid" src="img/polio_2.jpeg" alt="" style="height: 450px;width: 700px;">
+                        <span style="font-size:small;" class="text-dark">Gráfico ilustrativo sobre vacinação por grupo alvo</span>
+                    </div> 
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                        Essa coleta eletrônica e em tempo real evita a necessidade de registro manual, reduzindo erros e
+                        agilizando o processo de documentação. Assim que os dados são inseridos nos formulários eletrônicos,
+                        eles são transmitidos instantaneamente para o sistema central do DHIS2. Isso significa que os
+                        profissionais de saúde podem reportar as informações de vacinação quase imediatamente após a
+                        administração, garantindo uma atualização em tempo real dos dados.
+                    </p>
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                        O SIVE é uma ferramenta completa que desempenha
+                        um papel essencial tanto na vigilância epidemiológica quanto no processo de vacinação. Por meio da
+                        coleta eletrônica de dados em tempo real, o SIVE permite a detecção precoce de surtos de doenças,
+                        facilitando uma resposta rápida e eficaz. Além disso, o sistema também suporta o registro detalhado
+                        dos dados de vacinação, como doses administradas e grupos prioritários, garantindo uma cobertura
+                        vacinal abrangente. Com essas funcionalidades, o SIVE fortalece o controle de surtos, fornecendo
+                        informações atualizadas para avaliar a situação epidemiológica, implementar medidas de saúde pública
+                        adequadas e proteger a saúde da população de forma mais eficiente.
+                    </p>
+                </div>
+            </div>
+
+            <a target="_blank" href="https://sisma.misau.gov.mz/prod/"
+                class="btn bg-primary text-white aceder-button">Aceder <i class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+        <!-- About End -->
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up"></div>
+        </section>
+        <!-- End Services Section -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-light footer mt-5 pt-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-5 footer-responsive">
+                    <div class="col-md-8">
+                        <h5 class="text-black-50 mb-2">MISAU - Ministério da Saúde</h5>
+                        <small>O Nosso Maior Valor é a Vida!</small>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end align-items-center footer-responsive flex-column">
+                        <div class="d-flex justify-content-end align-items-center footer-responsive"  >
+                            <a href="https://www.misau.gov.mz/" target="_blank" >
+                                    <img class="img-fluid me-5" src="img/minisaude.png" alt="" style="width: 90px;">
+                            </a>
+                            <a href="https://www.dhis2.org" target="_blank">
+                                <img class="img-fluid me-5" src="img/dhis2.png" alt="" style="width: 50px;">
+                            </a>
+                            <a href="https://www.saudigitus.org" target="_blank">
+                                <img class="img-fluid me-5" src="img/saudigitus.png" alt="" style="width: 75px;">
+                            </a>
+                        </div>
+
+                        <div class="d-flex footer-responsive" style="display:flex; justify-content:space-evenly; width: 102%;" >
+        
+                                <small>
+                                    <a target="_blank" href="http://www.misau.gov.mz/" class="footer-menu" style="margin-left: -1vw;">MISAU</a>
+                                </small>
+                                <i class="border-end" style="margin-left: -2vw;"></i>
+                                <small>
+                                    <a target="_blank" href="http://www.dhis2.org/" class="footer-menu">DHIS2</a>
+                                </small>
+                                <i class="border-end" style="margin-left: -20px;"></i>
+                                <small>
+                                    <a target="_blank" href="https://www.saudigitus.org" class="footer-menu" style="margin-left: -2vw;">Saudigitus</a>
+                                </small>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid copyright">
+                <div class="container">
+                    <div class="row">
+                        <small class="col-md-10 text-center text-md-start mb-3 mb-md-0">
+                            &copy; 2023 - <a href="https://www.misau.gov.mz/" target="_blank">MISAU</a>, Todos direitos
+                            reservado
+                        </small>
+                 
+                        <div class="col-md-2 d-flex justify-content-between footer-responsive">
+                            <small class="text-center text-md-start mb-3 mb-md-0 me-4">
+                                Developed by <a href="https://saudigitus.org" target="_blank">Saudigitus</a>
+                            </small>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+    </html>

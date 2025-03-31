@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SISMA - Ministério da Saúde</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Favicon -->
+  <link type="image/x-icon" href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top sticky-top-main p-0 px-2 px-lg-3">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img class="img-fluid ms-lg-5 mx-2" src="img/emblema.png" alt="" style="width: 45px;">
+        <div class="text-center navbar-logo-text">
+            <h5 class="m-0 text-dark mt-1">Ministério da Saúde</h5>
+            <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Direção de Planificação e Cooperação</h6>
+            <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Departamento de Informação de Saúde</h6>
+        </div>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-4 py-lg-0">
+          <a href="index.html" class="nav-item nav-link">Início</a>
+          <a href="dicionario.html" class="nav-item nav-link">Dicionário de Metadados</a>
+          <a href="interoperability.html" class="nav-item nav-link  active">Plataformas de Interoperabilidade</a>
+          <a href="docs.html" class="nav-item nav-link">Documentos</a>
+          <a href="portal.html" class="nav-item nav-link">Portal</a>
+          
+            <div class="nav-item dropdown for-desktop">
+              <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown"
+                  aria-expanded="false"><span>Acesso às plataformas</span> <i
+                      class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                  <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+                  <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+                  <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+                  <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+                  <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+                  <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+                    </ul>
+          </div>
+          <div class="nav-item dropdown for-mobile">
+              <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown"
+                  aria-expanded="false"><span>Acesso às plataformas</span> <i
+                      class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <div class="dropdown-menu">
+                  <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+                  <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+                  <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+                  <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+                  <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+                  <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+                    </div>
+          </div>
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+  <!-- Header Start -->
+  <div class="container-fluid hero-header pt-5">
+    <div class="container-fluid ps-5 hero-header-container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-7 header-content">
+          <div>
+            <h2 class="display-3 mb-3 animated slideInDown" style="color: #ffff">
+              Plataforma de Interoperabilidade
+            </h2>
+          </div>
+        </div>
+        <div class="col-lg-5 animated fadeIn d-flex justify-content-center">
+          <img class="img-fluid animated pulse infinite"
+            style="animation-duration: 3s; width: 450px; margin-left: -50px; height: 450px;" src="img/interoperabilty1.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container">
+    <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+      <div class="pt-5 mt-4">
+        <div class="text-start">
+          <!-- <h2 class="display-6"> A Plataforma de Interoperabilidade</h2> -->
+          <a target="_blank" href="#" class="text-dark">
+            <p class="text-primary page-title-link fs-5 mb-4">
+              <!-- A Plataforma de Interoperabilidade -->
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5 align-items-end">
+      <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="">
+          <p class="text-dark text-justified" style="font-size: 17px">
+            A plataforma de interoperabilidade é uma camada intermediária que serve como mediador para os
+            processos de interoperabilidade entre o SISMA e demais sistemas.
+            Esta plataforma centraliza toda a comunicação entre os sistemas,
+            trazendo nesse quesito mais uma camada de segurança ao acesso à
+            informação. É possível nesta plataforma fazer a monitoria dos
+            processos de interoperabilidade.
+
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <p class="text-dark text-justified" style="font-size: 17px">
+          A plataforma de interoperabilidade agrega em si os módulos de MFL que permitem gerir as unidades
+          organizacionais dentro da estrutura hierárquica do Ministério da Saúde de Moçambique.Esta é constituída
+          pelos seguintes módulos:
+        </p>
+        <div class="mt-1">
+          <div class="d-flex align-items-center mb-2">
+            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+            <span class="text-dark">Módulo MFL - Master Facility List</span>
+          </div>
+          <div class="d-flex align-items-center mb-2">
+            <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+            <span class="text-dark">Módulo de Sincronização do MFL - Master Facility List Updater</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h4>Master Facility List - MFL</h4>
+        <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-4 mb-2"></div>
+
+        <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+          <p class="mt-3 text-dark text-justified" style="font-size: 17px">
+            O Master Facility List é um recurso que permite obter a
+            lista completa da actual divisão administrativa do país na
+            área de saúde. Esta lista engloba informações sobre as
+            províncias, os seus distritos e as suas unidades sanitárias,
+            centros de saúde e hospitais.
+            <br />
+            <br />
+            Tem como objectivo apresentar todo o escopo actual no que
+            diz respeito aos centros de saúde em funcionamento no país,
+            de forma a ser consumida por demais parceiros que queiram
+            ter esta actualização. O SIS-MA do Ministério da Saúde é a
+            principal fonte desta informação, pois a mesma está em
+            constante actualização.
+          </p>
+        </div>
+        <div class="col-lg-12 col-12 wow fadeInUp d-flex justify-content-center flex-column p-0 ps-3 mb-4 align-items-center" data-wow-delay="0.1s">
+          <img class="img-fluid" src="img/mfl_list.png" alt="" />
+          <span style="font-size:small;" class="text-dark">Plataforma de interoperabilidade </span>
+        </div>
+       
+        <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+          Com o Master Facility List, os clientes desta API podem
+          consultar e confrontar a sua estrutura organizacional com a
+          estrutura do SIS-MA, os clientes podem usar as informações que a
+          API disponibiliza de cada unidade organizacional para enriquecer
+          as informações nas estruturas dos seus sistemas, ou em casos de
+          interoperabilidade os clientes podem preparar o mapeamento das
+          estruturas dos dois sistemas tendo já acesso a estrutura usada
+          no SIS-MA.
+          <br />
+          <br />
+          Antes do estabelecimento da interoperabilidade do SIS-MA com outros sistemas decorria que pelos facto do
+          acesso à estrutura administrativa na área da saúde usada pelo MISAU ser privada, e qualquer entidade externa
+          que desejasse obter tal informação tinha de passar por um processo para obter a lista. Estes factores criavam
+          constrangimentos, em situações onde entidades externas têm procurado trocar informação com o SIS-MA e precisam
+          de uma lista mestre de unidades sanitárias para fazer a correspondência.
+          <br />
+          <br />
+          Outro problema observado, era a discrepância na codificação existente para as unidades organizacionais no país
+          na área de saúde. Sem uma lista mestre, cada instituição que actua na área da saúde usa o seu padrão para
+          codificação.
+          <br />
+          <br />
+          Como solução aos problemas observados inclui-se na plataforma de interoperabilidade um serviço de Master
+          Facility List, que procura permitir a todos interessados internos ao Ministério de Saúde ou externos, terem
+          acesso às lista mestre da estrutura administrativa actualizada usada.
+        </p>
+      </div>
+
+      <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h4>Módulo de Sincronização do MFL - Master Facility List Updater</h4>
+        <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-5 mb-2"></div>
+        <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+          O Master Facility List Updater é um dos módulos dentro do desenvolvimento do Master Facility List. Este módulo
+          em particular visa garantir uma gestão mais flexível das unidades organizacionais dentro do MISAU.
+          <br />
+          <br />
+          A necessidade de desenvolvimento deste módulo surge como resposta aos constrangimentos enfrentados pela equipe
+          do Departamento de Informação para Saúde (DIS) na gestação de unidades organizacionais, principalmente em
+          situações em que uma nova unidade organizacional era adicionada na instância agregada e precisava ser
+          replicada nas diversas instâncias.
+          <br />
+          <br />
+          O processo de adição de novas unidades organizacionais costumava ser moroso e em muitos casos culminava com a
+          não actualização das mesmas, factor que afetava seriamente o trabalho dos funcionários do sector. Esta
+          realidade demandou a adopção de que os levou em ter um mecanismo simples e flexível de gerir as unidades
+          organizacionais nas várias instâncias DHIS2 que possuem.
+          <br />
+          <br />
+          Para responder aos desafios enfrentados, foi proposto a criação de um mecanismo automatizado para a
+          actualização das unidades organizacionais em todas instâncias DHIS2 geridas pelo DIS.
+          <br />
+          <br />
+          Esta solução baseou-se na criação de uma instância que passou a funcionar como uma instância mãe, onde todas
+          as
+          unidades organizacionais novas são criadas nela. Esta é a instância detentora da lista mestre de unidades
+          organizacionais, e como forma de actualização, foi desenvolvido um módulo que é responsável por verificar as
+          actualizações na instância mestre e realizar a distribuição nas demais instâncias.
+        </p>
+      </div>
+
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 750px;">
+        <h1 class="display-6 text-primary">Sistemas externos que inter-operam com o SIS-MA</h1>
+      </div>
+      <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h4>Ferramenta Central - FC</h4>
+        <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-5 mb-2"></div>
+        <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+          A implementação de um processo de interoperabilidade entre o Ministério da Saúde e a Central de Medicamentos e
+          Artigos Médicos (CMAM), tem como objectivo permitir a partilha de dados de logística sobre os medicamentos.
+          <br />
+          <br />
+          Os dados são colhidos do lado do CMAM e armazenados em uma plataforma denominada Ferramenta Central, que
+          posteriormente são consumidos pelo SISMA. O processo de interoperabilidade entre os dois sistemas tem como
+          objectivo resolver a questão do baixo índice de reporte para fichas de logísticas de medicamentos, e minimizar
+          a dependência que o Ministério da Saúde tem para obter estas informações directamente do CMAM.
+          <br />
+          <br />
+          O constrangimento verificado para a implementação do projecto do CMAM, era referente a morosidade para a
+          obtenção dos dados de logística dos medicamentos por parte dos programas. Antes da implementação do módulo de
+          CMAM, cada programa do Ministério da Saúde de Moçambique que desejasse ter informação sobre a logística dos
+          medicamentos deveria entrar em contacto com a CMAM para que se enviasse esta informação, e este contacto
+          poderia levar vários dias, o que culminava em situações da falta de informação atempada.
+          <br />
+          <br />
+          Como forma de resolver os constrangimentos verificados se desenvolveu um módulo de interoperabilidade entre o
+          CMAM e o Sisma Agregado. Este processo é realizado através de um script que faz a leitura dos dados vindos da
+          API desenvolvida pela CMAM, e o script faz a formatação e envia os dados ao SIS-MA.
+          <br />
+          <br />
+          Este módulo é desenvolvido para o Departamento de Informação para Saúde do Ministério da Saúde de Moçambique.
+          Todo utilizador que tiver permissões adequadas de administrador na plataforma de interoperabilidade pode fazer
+          uso desta solução. E os dados partilhados neste módulo são do consumo dos programas do Ministério da Saúde.
+        </p>
+      </div>
+      <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h4>Sistema de Registos Civil e Estatísticas Vitais - SIRCEV</h4>
+        <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-5 mb-2"></div>
+        <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+          O estabelecimento da interoperabilidade entre o SIS-MA (Ministério da Saúde) e o SIRCEV (Ministério da
+          Justiça) visa permitir a partilha de dados do SIS-MA, mas especificamente do módulo de dados hospitalares com
+          o sistema de emissão de certificados de óbitos do Ministério da Justiça.
+          <br />
+          <br />
+          Estes dados são inicialmente colhidos/registados do lado do SIS-MA e para situações de óbitos os mesmos devem
+          ser enviados ao sistema do Ministério da Justiça, SIRCEV, de modo que este possa fazer a emissão do
+          certificado de óbito.
+          <br />
+          <br />
+          Esta interoperabilidade entre os dois sistemas permite a flexibilização do processo de emissão de certificados
+          de óbitos e acelera a digitação dos dados do lado do Ministério da Justiça visto que grande parte dos dados
+          demográficos dos pacientes já foram previamente colhidos do lado do Ministério da Saúde.
+          <br />
+          <br />
+          O processo de interoperabilidade acontece da seguinte forma, o sistema do Ministério da Justiça realiza uma
+          requisição GET a uma API intermediária fornecendo os parâmetros de pesquisa de dados, e esta API converte esta
+          requisição e parâmetros em uma requisição válida para o DHIS2.
+          <br />
+          <br />
+          Após esta conversão, a API realiza a requisição para o SIS-MA, onde o mesmo retorna os dados caso existam.
+          Estes dados encontram-se ainda em um formato bruto, consequentemente os mesmos sofrem uma reestruturação e são
+          devolvidos ao sistema do Ministério da Justiça.
+          <br />
+          <br />
+          Depois dos dados serem consumidos pelo lado do Ministério da Justiça, este sistema envia uma requisição POST,
+          com o intuito de alterar o estado destes dados, indicando que os mesmos já foram consumidos. Esta requisição é
+          tratada pela API, e esta faz uma requisição POST para o DHIS2, actualizando o novo estado.
+        </p>
+      </div>
+    </div>
+
+    <!--       <a
+        target="_blank"
+        href="https://sisma.misau.gov.mz/mhosp"
+        class="btn bg-primary text-white aceder-button mb-4"
+        >Aceder <i class="fa fa-arrow-right ms-2"></i
+      ></a> -->
+  </div>
+  <!-- About End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-light footer mt-5 pt-3 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container">
+              <div class="row g-5 footer-responsive">
+                  <div class="col-md-8">
+                      <h5 class="text-black-50 mb-2">MISAU - Ministério da Saúde</h5>
+                      <small>O Nosso Maior Valor é a Vida!</small>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-end align-items-center footer-responsive flex-column">
+                      <div class="d-flex justify-content-end align-items-center footer-responsive"  >
+                          <a href="https://www.misau.gov.mz/" target="_blank" >
+                                  <img class="img-fluid me-5" src="img/minisaude.png" alt="" style="width: 90px;">
+                          </a>
+                          <a href="https://www.dhis2.org" target="_blank">
+                              <img class="img-fluid me-5" src="img/dhis2.png" alt="" style="width: 50px;">
+                          </a>
+                          <a href="https://www.saudigitus.org" target="_blank">
+                              <img class="img-fluid me-5" src="img/saudigitus.png" alt="" style="width: 75px;">
+                          </a>
+                      </div>
+
+                      <div class="d-flex footer-responsive" style="display:flex; justify-content:space-evenly; width: 102%;" >
+      
+                              <small>
+                                  <a target="_blank" href="http://www.misau.gov.mz/" class="footer-menu" style="margin-left: -1vw;">MISAU</a>
+                              </small>
+                              <i class="border-end" style="margin-left: -2vw;"></i>
+                              <small>
+                                  <a target="_blank" href="http://www.dhis2.org/" class="footer-menu">DHIS2</a>
+                              </small>
+                              <i class="border-end" style="margin-left: -20px;"></i>
+                              <small>
+                                  <a target="_blank" href="https://www.saudigitus.org" class="footer-menu" style="margin-left: -2vw;">Saudigitus</a>
+                              </small>
+                   
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container-fluid copyright">
+              <div class="container">
+                  <div class="row">
+                      <small class="col-md-10 text-center text-md-start mb-3 mb-md-0">
+                          &copy; 2023 - <a href="https://www.misau.gov.mz/" target="_blank">MISAU</a>, Todos direitos
+                          reservado
+                      </small>
+               
+                      <div class="col-md-2 d-flex justify-content-between footer-responsive">
+                          <small class="text-center text-md-start mb-3 mb-md-0 me-4">
+                              Developed by <a href="https://saudigitus.org" target="_blank">Saudigitus</a>
+                          </small>
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script>
+    $(window).on("click", function (event) {
+      var clickOver = $(event.target);
+      if (
+        $(".navbar .navbar-toggler").attr("aria-expanded") == "true" &&
+        clickOver.closest(".navbar").length === 0
+      ) {
+        $('button[aria-expanded="true"]').click();
+      }
+    });
+    $(function () {
+      $(".collapsible1").click(function () {
+        $(this).next().toggleClass("collapsed");
+        $(this).toggleClass("toggled"); // this just rotates the expander arrow
+      });
+      var replaceText = $(this).next().hasClass("collapsed")
+        ? "Exibir mais"
+        : "Exibir menos";
+      $(this).text(replaceText);
+
+      $("#botao").click(function () {
+        $("#botao").toggleClass("dropdown-toggle");
+        $("#botao").toggleClass("dropUp-toggle");
+      });
+    });
+
+    owl.data("owl.carousel").options.autoWidth = true;
+
+    owl.trigger("refresh.owl.carousel");
+  </script>
+
+  <!--     <script>
+        var coll = document.getElementsByClassName("collapsible1");
+        var i;
+  
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "flex") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "flex";
+            }
+          });
+        }
+        $(".button-6").on("click", function () {
+          $(this).parent().toggleClass("showContent");
+  
+          // Shorthand if-else statement
+          var replaceText = $(this).parent().hasClass("showContent")
+            ? "Exibir menos"
+            : "Exibir mais";
+          $(this).text(replaceText);
+        });
+  
+        $("#botao").click(function () {
+          $("#botao").toggleClass("dropdown-toggle");
+          $("#botao").toggleClass("dropUp-toggle");
+        });
+      </script> -->
+</body>
+
+</html>

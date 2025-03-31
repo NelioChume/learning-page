@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SISMA - Ministério da Saúde</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Favicon -->
+  <link type="image/x-icon" href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <div id="inicio"></div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top sticky-top-main p-0 px-2 px-lg-3">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <img class="img-fluid ms-lg-5 mx-2" src="img/emblema.png" alt="" style="width: 45px;">
+      <div class="text-center navbar-logo-text">
+        <h5 class="m-0 text-dark mt-1">Ministério da Saúde</h5>
+        <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Direção de Planificação e Cooperação</h6>
+        <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Departamento de Informação de Saúde</h6>
+      </div>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto py-4 py-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Início</a>
+        <a href="dicionario.html" class="nav-item nav-link">Dicionário de Metadados</a>
+        <a href="interoperability.html" class="nav-item nav-link">Plataformas de Interoperabilidade</a>
+        <a href="docs.html" class="nav-item nav-link ">Documentos</a>
+        <a href="portal.html" class="nav-item nav-link">Portal</a>
+
+        <div class="nav-item dropdown for-desktop">
+          <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><span>Acesso
+              às plataformas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+            <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+            <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+            <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+          </ul>
+        </div>
+        <div class="nav-item dropdown for-mobile">
+          <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"><span>Acesso
+              às plataformas</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <div class="dropdown-menu">
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+            <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+            <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+            <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+            <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Header Start -->
+  <div class="container-fluid hero-header pt-5">
+    <div class="container-fluid ps-5 hero-header-container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-7 header-content">
+          <div class="">
+            <h2 class="display-3 mb-3 animated slideInDown" style="color: #ffff">
+              História do SISMA
+            </h2>
+          </div>
+        </div>
+        <div class="col-lg-5 animated fadeIn d-flex justify-content-center">
+          <img class="img-fluid animated pulse infinite"
+            style="animation-duration: 3s;  width: 550px; margin-left: -50px; height: 450px;" src="img/sisma_cover.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container-fluid pt-3">
+    <div class="container">
+      <div class="row g-5 ">
+        <div class="col-lg-12 mt-5">
+          <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <h2 class="mx-3">História do SIS-MA</h2>
+              <div class="row align-items-start">
+                <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="" style="padding: 0 !important;">
+                    <p class="text-dark text-justified mt-2" style="font-size: 17px;">
+                      Após a independência em 1975, o país sofreu várias transformações nos diversos sectores do estado,
+                      inclusive no sector de saúde. A par destas transformações, no sector da saúde em particular
+                      verificaram-se
+                      grandes progressos no estabelecimento e implementação do programa nacional de saúde, no aumento de
+                      unidades
+                      sanitárias, incluindo em zonas remotas, o aumento do acesso à cuidados de serviços de saúde a que
+                      a
+                      população passou a beneficiar, entre outros. A visão dos quadros existentes no sector e que
+                      compunham a
+                      máquina governativa, foi bastante significativa para reverter o cenário frágil do sistema de
+                      saúde, duramente
+                      afectado pela fuga de quadros do sector. Cientes da necessidade de possuir um sistema de saúde
+                      robusto e de
+                      qualidade, já em 1976 o sector concentrou seus esforços e investimentos tanto na formação de
+                      pessoal na área
+                      de saúde como no estabelecimento do seu Sistema de Informação para a Saúde.
+                      <br /><br />
+                      Um sistema de informação robusto e integrado, que fornece a base para a geração de dados de boa
+                      qualidade, é a base para a construção de um sistema nacional de prestação de serviços de saúde
+                      bem-sucedido e constitue um dos alicerces do sistema de saúde. O SIS envolve processos de colecta,
+                      processamento, notificação e uso das informações necessárias para melhorar a eficácia e eficiência
+                      dos serviços de saúde por meio do aprimoramento da gestão em todos os níveis do sistema de saúde.
+                      <br /><br />
+                      Ao longos dos anos, tem se mostrado que para uma melhor gestão de serviços de saúde, a informação
+                      de qualidade desempenha uma papel crucial para a tomada de decisão atempada, principalmente pela
+                      necessidade de ser mais responsivo às ameaças à saúde; ênfase crescente no sector da saúde, às
+                      reformas e descentralização; e novas abordagens para monitorar o progresso no sentido de alcançar
+                      as metas de saúde traçadas pelo governo.
+                      <br /><br />
+                      Assim, nesta perspectiva, a existência e funcionamento de um SIS coerente e harmonizado, que
+                      permite a produção e disponibilidade de informações de saúde necessárias para o fortalecimento e
+                      avaliação de saúde, incluindo a produção de relatórios, potencializa os sistemas de saúde que vai
+                      responder às necessidades dos usuários finais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-100 mt-5">
+              <h2 class="mx-3">Fases da implementação do SIS-MA</h2>
+              <div class="row align-items-start">
+                <div class="row col-lg-12 col-12 mt-2 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="col-lg-8" style="padding: 0 !important;">
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                      Os primeiros passos para o estabelecimento do SIS em Moçambique forma dados em 1976, através da
+                      introdução de um sistema formal para o registo de actividades de prevenção, promoção e cura, porém
+                      estas actividades não eram reportadas. A partir de 1979, o MISAU estabeleceu um mecanismo de
+                      recolha de dados de todas unidades sanitárias do Sistema Nacional de Saúde em fichas de
+                      levantamento semelhante ao inquérito anual. Com base nesse mecanismo foi possível a obtenção do
+                      primeiro panorama nacional da situação do País.
+                      <br /><br />
+                      Em 1982, foi criada uma estrutura de recolha de dados sistemática. A iniciativa de estruturação do
+                      sistema envolveu essencialmente a uniformização de métodos de registo e a inclusão de indicadores
+                      epidemiológicos.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="img-fluid me-5" src="img/sisma_cover_fases.png" alt="" />
+                    <span style="font-size:small;" class="text-dark">Representação temporal de implementação dos
+                      Sistemas de Informação de Saúde</span>
+                  </div>
+                  <div class="" style="padding: 0 !important;">
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                      <br />
+                      Apesar deste avanço o SIS apresentava limitações e deficiência de funcionamento, pois, persistiam
+                      problemas básicos tais como a obtenção de dados completos, correctos e atempados. Portanto, em
+                      1989 -1990 foram actualizados os processos de registo e recolha de dados por forma a que
+                      obedecessem os seguintes princípios: simplificação dos impressos e os livros de registos e
+                      eliminação de duplicações; redução da quantidade de dados a serem registados e recolhidos;
+                      demonstração de como os dados podiam e deviam ser transformados em informação para posterior
+                      interpretação e utilização; Criação e responsabilização dos Núcleos de Estatística e Planificação,
+                      ao nível central, provincial e distrital.
+                      <br /><br />
+                      A aplicação dos sistemas informáticos iniciou-se em 1992 com a introdução de um sistema designado
+                      SIS-Pro. Entretanto, as limitações que foram sendo verificadas nos anos subsequentes impulsionaram
+                      novos desenvolvimentos. Dentres estes destacaram-se o Sistema Integrado de Monitoria e
+                      Planificação (SIMP), implementado em 2002, e o Módulo Básico (MB-SIS), que o substituiu em 2004 e
+                      foi usado a nível nacional. Apesar destes importantes avanços, foram-se verificando alguns
+                      problemas recorrentes associados à duplicação de dados, dispersão de dados e atrasos no envio de
+                      dados a diferentes níveis do sector de saúde. De tal forma que, entre 2006 a 2008 foi criado um
+                      plano de reestruturação do SIS. O SIS passou por um processo de auditoria que desencadeou o
+                      desenvolvimento do Sistema de Informação de Saúde para Monitoria e Avaliação (SIS-MA). A
+                      implementação deste sistema teve início em 2014, e foi efectivada em 2016 com o seu
+                      estabelecimento em todas as províncias do país.
+                      <br /><br />
+                    </p>
+
+                    <div
+                      class="wow fadeInUp d-flex justify-content-center mb-3 flex-column text-center align-items-center"
+                      data-wow-delay="0.1s">
+                      <img class="img-fluid" src="img/modulo_basico_cobver.jpeg" alt=""
+                        style="height: 350px; width: 1000px;" />
+                      <span style="font-size:small;" class="text-dark">Módulo Básico</span>
+                    </div>
+
+                    <p class="text-dark text-justified" style="font-size: 17px">
+                      A par dos registos efectuados através destes sistemas foi sendo feita, de forma contínua, a
+                      vigilância epidemiológica desde 1997, com o foco em doenças de notificação obrigatória cujo
+                      registo é feito até ao momento numa base semanal. Este processo conta actualmente com Sistema de
+                      Informação para Vigilância Epidemiológica (SIS-VE), cuja implementação culminou em 2010, cobrindo
+                      todas as 11 províncias do país.
+                      <br /><br />
+                      Dentro do Sistema Nacional de Saúde, algumas iniciativas foram também desenvolvidas, específicas
+                      para alguns programas de saúde, com o suporte dos seus respectivos parceiros. A título de exemplo
+                      refira-se o SIS-Malaria, o SIS-Colera, dentre outros. Outros desenvolvimentos significativos foram
+                      também imprimidos para o suporte da gestão de informação ao nível hospitalar. Dentre estes,
+                      destaca-se o Sistema de Informação para o Registo de Óbitos (SIS-ROH) que foi implementado em 2009
+                      nos Hospitais Gerais, Provinciais, Distritais e Rurais, ao nível do país, tendo sido substituído
+                      mais tarde pelo Sistema de Gestão Hospitalar (SIS-HOSP) em 201?; o Sistema hospitalar de dados
+                      agregados de Internamento (SIS-H); o Sistema de Informação do Hospital Central de Maputo (SIS-HCM)
+                      e o Sistema de Monitoria de Pacientes de HIV em Moçambique. Uma outra iniciativa esteve associada
+                      ao desenvolvimento do Point of Care (POC) em 2019, que se destinava ao suporte das unidades
+                      sanitárias para a gestão de dados de indivíduos com doenças endémicas (TB and HIV, por exemplo),
+                      associado ao Sistema SESP.
+                      <br /><br />
+                      Uma contribuição significativa ao longo deste processo e digna de destaque foi a participação de
+                      Moçambique no processo de desenvolvimento de uma solução de software livre e de código aberto, o
+                      District Health Information Systems (DHIS), desde os anos 2000. A capacitação de quadros
+                      superiores, numa fase inicial do desenvolvimento desta solução, e o estreitamento de relações com
+                      instituições que se dedicaram ao seu desenvolvimento fortificou o conforto do Ministério da Saúde
+                      em adopar esta solução no sector de saúde. O DHIS na sua versão 2 (DHIS2) foi desenvolvido numa
+                      plataforma web, como um repositório para dados de saúde de rotina agregados de uma variedade de
+                      fontes.
+                      <br /><br />
+                      A implementação do SIS-MA na plataforma DHIS2 e a disponibilidade de mais recursos para o
+                      desenvolvimento do SIS, incluindo novas ferramentas de colecta de dados, hardware e software,
+                      representaram ganhos significativos para o sector. Para além destes, é importante reforçar que o
+                      conjunto de pessoal do sector com capacidade de gestão de informação para a saúde aumentou. Os
+                      resultados imprimidos através dos Institutos Médios, Institutos Superiores e Universidades que se
+                      dedicam à formação de quadros da saúde é bastante significativo. A adicionar, um elemento chave
+                      neste processo está associado à possibilidade de treinamento de curta duração. Esta, que pode ser
+                      trazida ao pessoal de saúde através das Academias DHIS2 locais, regionais e internacionais, mas
+                      também através da prática instituída no sector de “treinamento em serviço”.
+                      <br /><br />
+                      A qualidade dos dados melhorou substancialmente e um sistema de relatórios padronizado para envio
+                      de dados ao Departamento de Informação para a Saúde (DIS) com uma periodicidade mensal. No
+                      entanto, foram vários os desafios ao longo do caminho, muitos dos quais serão apresentados aqui.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-light footer mt-5 pt-3 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row g-5 footer-responsive">
+        <div class="col-md-8">
+          <h5 class="text-black-50 mb-2">MISAU - Ministério da Saúde</h5>
+          <small>O Nosso Maior Valor é a Vida!</small>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end align-items-center footer-responsive flex-column">
+          <div class="d-flex justify-content-end align-items-center footer-responsive">
+            <a href="https://www.misau.gov.mz/" target="_blank">
+              <img class="img-fluid me-5" src="img/minisaude.png" alt="" style="width: 90px;">
+            </a>
+            <a href="https://www.dhis2.org" target="_blank">
+              <img class="img-fluid me-5" src="img/dhis2.png" alt="" style="width: 50px;">
+            </a>
+            <a href="https://www.saudigitus.org" target="_blank">
+              <img class="img-fluid me-5" src="img/saudigitus.png" alt="" style="width: 75px;">
+            </a>
+          </div>
+
+          <div class="d-flex footer-responsive" style="display:flex; justify-content:space-evenly; width: 102%;">
+
+            <small>
+              <a target="_blank" href="http://www.misau.gov.mz/" class="footer-menu"
+                style="margin-left: -1vw;">MISAU</a>
+            </small>
+            <i class="border-end" style="margin-left: -2vw;"></i>
+            <small>
+              <a target="_blank" href="http://www.dhis2.org/" class="footer-menu">DHIS2</a>
+            </small>
+            <i class="border-end" style="margin-left: -20px;"></i>
+            <small>
+              <a target="_blank" href="https://www.saudigitus.org" class="footer-menu"
+                style="margin-left: -2vw;">Saudigitus</a>
+            </small>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright">
+      <div class="container">
+        <div class="row">
+          <small class="col-md-10 text-center text-md-start mb-3 mb-md-0">
+            &copy; 2023 - <a href="https://www.misau.gov.mz/" target="_blank">MISAU</a>, Todos direitos
+            reservado
+          </small>
+
+          <div class="col-md-2 d-flex justify-content-between footer-responsive">
+            <small class="text-center text-md-start mb-3 mb-md-0 me-4">
+              Developed by <a href="https://saudigitus.org" target="_blank">Saudigitus</a>
+            </small>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script>
+    $(window).on("click", function (event) {
+      var clickOver = $(event.target);
+      if (
+        $(".navbar .navbar-toggler").attr("aria-expanded") == "true" &&
+        clickOver.closest(".navbar").length === 0
+      ) {
+        $('button[aria-expanded="true"]').click();
+      }
+    });
+    $(function () {
+      $(".collapsible1").click(function () {
+        $(this).next().toggleClass("collapsed");
+        $(this).toggleClass("toggled"); // this just rotates the expander arrow
+      });
+      var replaceText = $(this).next().hasClass("collapsed")
+        ? "Exibir mais"
+        : "Exibir menos";
+      $(this).text(replaceText);
+
+      $("#botao").click(function () {
+        $("#botao").toggleClass("dropdown-toggle");
+        $("#botao").toggleClass("dropUp-toggle");
+      });
+    });
+
+    owl.data("owl.carousel").options.autoWidth = true;
+
+    owl.trigger("refresh.owl.carousel");
+  </script>
+
+  <!--     <script>
+          var coll = document.getElementsByClassName("collapsible1");
+          var i;
+    
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "flex") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "flex";
+              }
+            });
+          }
+          $(".button-6").on("click", function () {
+            $(this).parent().toggleClass("showContent");
+    
+            // Shorthand if-else statement
+            var replaceText = $(this).parent().hasClass("showContent")
+              ? "Exibir menos"
+              : "Exibir mais";
+            $(this).text(replaceText);
+          });
+    
+          $("#botao").click(function () {
+            $("#botao").toggleClass("dropdown-toggle");
+            $("#botao").toggleClass("dropUp-toggle");
+          });
+        </script> -->
+</body>
+
+</html>

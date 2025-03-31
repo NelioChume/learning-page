@@ -1,0 +1,538 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>SISMA - Ministério da Saúde</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link type="image/x-icon" href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <div id="inicio"></div>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top sticky-top-main p-0 px-2 px-lg-3">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img class="img-fluid ms-lg-5 mx-2" src="img/emblema.png" alt="" style="width: 45px;">
+          <div class="text-center navbar-logo-text">
+              <h5 class="m-0 text-dark mt-1">Ministério da Saúde</h5>
+              <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Direção de Planificação e Cooperação</h6>
+              <h6 class="m-0 text-dark mt-1" style="font-size: 14px;">Departamento de Informação de Saúde</h6>
+          </div>
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-4 py-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Início</a>
+            <a href="dicionario.html" class="nav-item nav-link">Dicionário de Metadados</a>
+            <a href="interoperability.html" class="nav-item nav-link">Plataformas de Interoperabilidade</a>
+            <a href="docs.html" class="nav-item nav-link">Documentos</a>
+            <a href="portal.html" class="nav-item nav-link">Portal</a>
+
+              <div class="nav-item dropdown for-desktop">
+                <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false"><span>Acesso às plataformas</span> <i
+                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+                    <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+                    <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+                    <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+                      <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+                      </ul>
+            </div>
+            <div class="nav-item dropdown for-mobile">
+                <a href="#" class="nav-link" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false"><span>Acesso às plataformas</span> <i
+                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <div class="dropdown-menu">
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/prod/">Dados Agregados</a></li>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/mhosp">SIS-U</a></li>
+                    <li><a target="_blank" href="https://sisma.misau.gov.mz/sisc/">SIS-C</a></li>
+                    <li><a target="_blank" href="https://sis.misau.gov.mz/sive/">SIVE</a>
+                    <li><a target="_blank" href="https://sis.misau.gov.mz/survey">Módulo Campanhas</a>
+                    <li><a target="_blank" href="https://siim.misau.gov.mz/prod">SIIM</a>
+                      <li><a target="_blank" href="https://sisma.misau.gov.mz/imdvbg/">e-IMD VBG</a>
+                      </div>
+            </div>
+          </div>
+
+      </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Header Start -->
+  <div class="container-fluid hero-header pt-5">
+    <div class="container-fluid ps-5 hero-header-container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-7 header-content" >
+          <div>
+            <h2 class="display-3 mb-3 animated slideInDown " style="color: #ffff">SIS-MA</h2>
+            <h4 class="mb-3 animated slideInDown fw-bold" style="color: #ffff">
+              Sistema de Informação de Saúde para Monitoria e Avaliação
+            </h4>                   
+          </div>
+          </div>
+          <div class="col-lg-5 animated fadeIn d-flex justify-content-center">
+            <img class="img-fluid animated pulse infinite"
+                style="animation-duration: 3s;  width: 550px; margin-left: -50px; height: 450px;" src="img/sisma_cover.png"
+                alt="">
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- Header End -->
+    <!-- About Start -->
+    <div class="container-fluid pt-5 px-5" id="sobre">
+      <div class="row px-4">
+        <div class="row col-lg-8 align-items-start mt-2">
+          <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="h-100">
+              <h2 class="">Sobre o SIS-MA</h2>
+              <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-4 mb-2"></div>
+              <p class="text-dark text-justified" style="font-size: 17px">
+                O SIS-MA é a principal plataforma de gestão e análise de dados  do MISAU desenvolvida com base no DHIS2, um software de código aberto e flexível baseado na Web, responsável por suportar a recolha, armazenamento, análise, interpretação, visualização e disseminação de informação de saúde usada para a definição e monitoria de políticas de saúde pública em escala nacional.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.2s">
+            <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+              O SIS-MA foi projectado para colectar informações sobre vários aspectos de saúde, incluindo dados demográficos, indicadores de saúde, cobertura de serviços de saúde, epidemiologia, recursos humanos em saúde, entre outros. O SIS-MA também é usado para gerar relatórios, analisar dados e partilhar informações entre as diferentes partes interessadas, incluindo, organizações de saúde, parceiros de cooperação, agências governamentais e demais organizações não governamentais.
+              <br/><br/>
+              Através desse sistema, o MISAU monitora indicadores de saúde, identifica lacunas, toma medidas correctivas e avalia o impacto das intervenções de saúde implementadas em Moçambique. Ele fornece um quadro para a colecta de dados em nível nacional, provincial e distrital, visando monitorar o desempenho dos serviços de saúde e facilitar a tomada de decisões informadas.  
+              
+            </p>
+          </div>
+          <div class="col-lg-12 col-12 mt-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Entrada de dados</h2>
+            <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-4 mb-2"></div>
+          </div>
+          <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.2s">
+            <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+              A entrada de dados é feita em listas de elementos de dados ou em formulários personalizados definidos pelo utilizador que são desenvolvidos à semelhança dos formulários baseados em papel para facilitar  a compreensão do utilizador. 
+              <br/><br/>
+              Para proceder com a inserção de dados no SIS-MA podem ser usados uma variedade de dispositivos. Qualquer computador pode acessar o SIS-MA por meio de sua interface baseada na Web e o aplicativo de captura Android DHIS2 oferece funcionalidade completa de entrada de dados em dispositivos móveis, e o sistema pode ser configurado para entrada limitada de dados por SMS. 
+              <br/><br/>
+              Tanto os aplicativos da web quanto os móveis funcionam offline: se a conectividade com a Internet cai durante a captura, os dados são armazenados localmente no navegador ou no aplicativo Android e o utilizador poderá continuar com o seu trabalho sem precisar interromper devido a falta de internet. Assim, quando a conectividade da internet for restabelecida, seus dados serão sincronizados com o servidor online.
+            </p>
+          </div>
+        </div>
+        <!-- Modules Start -->
+        <div class="row col-lg-4 ">
+            <div class="col-lg-12">
+              <h4 class="mb-3 pt-3">Módulos do ecossistema SIS-MA</h4>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Módulo de dados agregados (SIS-MA)
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        SIS-MA Agregado é o módulo responsável pela colecta,
+                        organização e análise de informações agregadas sobre
+                        indicadores de saúde. É um módulo projectado para colectar
+                        dados em níveis mais amplos, como distritos, províncias e
+                        nacional, e abrange uma ampla gama de áreas de saúde.
+                      </p>
+                      <a href="aggregatedData.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Módulo de Gestão de Dados do Utente (SIS-U)
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        O SIS-U é o módulo hospitalar do SIS-MA, que permite o
+                        registo e monitoria de informações individuais de pacientes
+                        referentes a internamentos, óbitos, altas, tuberculose,
+                        cancro, óbitos maternos e neonatais, e registos de
+                        nascimento. É uma ferramenta essencial para o registo e
+                        gestão de informações detalhadas de pacientes.
+                      </p>
+                      <a href="sisu.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Sistema de Informação de Vigilância Epidemiológica (SIVE)
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        O Sistema de Informação de Vigilância Epidemiológica (SIVE)
+                        é um módulo projectado para colectar, analisar e interpretar
+                        dados epidemiológicos em tempo real, permitindo uma resposta
+                        rápida e eficaz a surtos de doenças, bem como o registo de
+                        dados de campanhas de vacinação contra doenças de
+                        vigilância.
+                      </p>
+                     <a href="sive.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                      Sistema Integrado de Armazenamento de Informação sobre a
+                      Malária (SIIM)
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        O iMISS/SIIM é uma plataforma de gestão integrada de dados
+                        de saúde que facilita a colecta e armazenamento em uma única
+                        base de dados toda a informação inerente à malária. Este
+                        sistema integra e centraliza os dados relacionados à
+                        malária, permitindo que diferentes níveis hierárquicos do
+                        Sistema Nacional de Informação em Saúde (SNIS) monitorem os
+                        indicadores-chave, avaliem o impacto das intervenções e
+                        obtenham evidências para o planeamento e implementação de
+                        estratégias de resposta em todo o sistema.
+                      </p>
+                      <a href="siim.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Sistema de Informação de Saúde Comunitário (SIS-C)
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        O SIS-C é um sistema que faz a colecta e registo de dados de
+                        saúde da comunidade para facilitar o rastreio de doenças,
+                        eliminar o congestionamento de filas nas Unidades Sanitárias
+                        e levar os cuidados de saúde primária às comunidades.
+                      </p>
+                     <a href="sisc.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Módulo dedicado à colecta de dados de vigilância e campanhas
+                      (Módulo Campanhas)
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        O módulo usado para registrar informações relacionadas a
+                        estudos epidemiológicos. Esse módulo permite a colecta de
+                        dados por meio de questionários ou formulários específicos,
+                        que podem ser respondidos por profissionais de saúde,
+                        pacientes ou outros participantes envolvidos nas pesquisas.
+                      </p>
+                     <a href="vigilanceSurvey.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Registo Eletrónico Infantil (REI)
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        O Registo Electrónico Infantil é uma ferramenta composta por
+                        módulos inter-relacionados que colectam, processam,
+                        armazenam dados de saúde da criança desde a vacinação e
+                        avaliação nutricional, o acompanhamento em caso de doença ou
+                        em estado de risco para apoiar os processos de tomada de
+                        decisão e controle. É uma ferramenta que facilita a
+                        monitoria individualizada e oportuna do acompanhamento da
+                        criança, e a busca activa de crianças faltosas.
+                      </p>
+                     <a href="rei.html" class="btn bg-primary text-white aceder-button">Ler mais<i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Modules End -->
+
+        <div class="col-lg-12 col-12  wow row fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-12 col-12 mt-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Unidades Organizacionais e níveis de reporte de dados</h2>
+            <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-4 mb-2"></div>
+            <p class="text-dark text-justified" style="font-size: 17px">
+              O SIS-MA estabelece diferentes níveis de reporte para garantir a colecta abrangente e oportuna de dados de saúde em todos os níveis do sistema de saúde. Esses níveis de reporte são projectados para permitir a transmissão adequada das informações, desde os níveis inferiores, como as unidades de sanitárias, até os níveis superiores, como os órgãos de gestão nacional.
+              No todo, são quatro (4) níveis que compõem a estrutura, nomeadamente, nível da Unidade Sanitária, nível do distrito, nível da província e o nível nacional, também designado por nível central.
+            </p>
+          </div>
+          <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.2s">
+            <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+              No processo de entrada de dados no SIS-MA, as unidades sanitárias primárias colectam informações sobre atendimentos, serviços prestados e indicadores de saúde. Esses dados são registados em formulários específicos ou sistemas eletrônicos e, em seguida, compilados e enviados aos níveis superiores, como distritos e províncias. Esses níveis são responsáveis por receber os dados das unidades sanitárias em sua área de abrangência, rever e validar os dados e enviá-las para o nível acima. 
+              <br/><br/>
+              No nível central, os dados são consolidados e analisados de forma abrangente. Essa etapa envolve a revisão dos dados recebidos dos níveis inferiores para garantir sua qualidade e integridade. Os dados são então utilizados para monitorar indicadores de saúde, identificar tendências, avaliar o desempenho do sistema de saúde e informar a tomada de decisões estratégicas. 
+              <br/><br/>
+              Além disso, os dados consolidados e as análises são compartilhados com outros actores interessados, como órgãos governamentais, organizações não governamentais e parceiros de saúde, para promover a transparência, colaboração e apoio mútuo na melhoria da saúde da população. Essa partilha de informações é fundamental para fortalecer o sistema de saúde como um todo e para direccionar intervenções e políticas de saúde baseadas em evidências.
+            </p>
+          </div>
+          <div class="col-lg-4 col-12 wow fadeInUp d-flex justify-content-center flex-column text-center" data-wow-delay="0.1s">
+            <img class="img-fluid" src="img/sisma_piramide.jpeg" alt="" style="height: 80%;" />
+            <span style="font-size:small;" class="text-dark">Níveis Organizacionais do processo de colecta de dados no SIS-MA</span>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-12 mt-5  wow row fadeInUp" data-wow-delay="0.2s">
+          <div class=" wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Qualidade dos dados</h2>
+            <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-4 mb-2"></div>
+          </div>
+          <div class="col-lg-12 col-12 wow fadeInUp" data-wow-delay="0.2s">  
+            <p class="mb-3 text-dark text-justified" style="font-size: 17px">
+              A qualidade dos dados no SIS-MA é de extrema importância para garantir a confiabilidade e utilidade das informações colectadas. A qualidade dos dados está diretamente relacionada à precisão, completude, consistência, oportunidade e integridade das informações registradas no sistema.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-12 wow fadeInUp d-flex justify-content-start" data-wow-delay="0.1s">
+            <img class="img-fluid" src="img/data_entry_cover.jpeg" alt="" style="height: 234px; width: 100%;" />
+          </div>
+
+          <div class="col-lg-8 col-12 wow fadeInUp" data-wow-delay="0.2s">  
+            <p class="mb-4 text-dark text-justified" style="font-size: 17px">
+              Para garantir a qualidade dos dados, no ponto de entrada é feita uma verificação para aferir se os dados estão dentro dos níveis de intervalo aceitáveis ​​de valores mínimos e máximos para qualquer elemento de dados específico. Essa verificação, por exemplo, pode ajudar a identificar erros de digitação no momento da digitação. 
+              <br/><br/>
+              Além disso, o utilizador pode definir várias regras de validação que podem ser executadas por meio das regras de validação para identificar violações. Esses tipos de verificações ajudam a garantir que os dados inseridos no sistema sejam de boa qualidade desde o início e possam ser aprimorados pelas pessoas mais familiarizadas com eles.
+              <br/><br/>
+              Ao garantir a qualidade dos dados no SIS-MA, é possível obter informações precisas e confiáveis para a monitoria da saúde, avaliação de programas e políticas, planeamento estratégico e tomada de decisões informadas.
+            </p>
+
+          </div>
+          
+        </div>
+
+        <div class="col-lg-12 col-12  wow row fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-12 col-12 my-5 wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Visualização e análise de dados</h2>
+            <div class="d-inline-block rounded-pill bg-primary text-white fw-bold py-1 px-4 mb-2"></div>
+            <p class="text-dark text-justified" style="font-size: 17px">
+              A visualização e análise de dados no SIS-MA é feito com recurso a várias ferramentas, dentre as quais, mapas, gráficos, tabelas dinâmicas e dashboard.
+            </p>
+            <div class="row py-3">
+              <div class="col-lg-3 col-md-6 my-2 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="service-item bg-white pt-4 px-4 pb-2">
+                      <img class="img-fluid mb-4" src="img/height-map-svgrepo-com.svg" alt="" style="width: 64px;">
+                      <h5 class="mb-3">Mapas</h5>
+                      <p class="text-justified">
+                        O SIS-MA possui recursos do Sistema de Informações Geográficas (GIS) baseado na Web por meio do aplicativo Maps integrado, que permite fazer mapeamento temático de áreas e pontos, visualizar unidades sanitárias com base em classificações, visualizar áreas de captação para cada unidade sanitária e geolocalizar casos individuais para rastreamento de contato durante um surto de doença.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-2 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="service-item bg-white pt-4 px-4 pb-2">
+                      <img class="img-fluid mb-4" src="img/monitor.png" alt="" style="width: 64px;">
+                      <h5 class="mb-3">Gráficos</h5>
+                      <p class="text-justified">
+                        Nas suas diversas variedades, tais como colunas, linhas, pizza, colunas empilhadas e gráficos de área. Pode-se exibir linhas de tendência, legendas, títulos, rótulos, linhas de destino e linhas de base. Pode-se facilmente Selecionar todos os indicadores, unidades organizacionais, períodos de tempo e outras dimensões, e inverter categorias e séries. Os gráficos podem ser salvos como favoritos e compartilhados ou mesmo baixados como imagens e PDFs.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-2 wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="service-item bg-white pt-4 px-4 pb-2">
+                      <img class="img-fluid mb-4" src="img/table-svgrepo-com.svg" alt="" style="width: 64px;">
+                      <h5 class="mb-3">Tabelas dinâmicas</h5>
+                      <p class="text-justified">
+                        Totalmente baseadas na Web e permitem analisar dados em todas as dimensões de dados e organizá-los em colunas, linhas e como filtros sob demanda. O utilizador pode incluir totais e subtotais e remover linhas vazias e controlar a densidade de exibição, tamanho da fonte e separador de grupo de dígitos. Tabelas dinâmicas podem ser salvas como favoritas, baixadas e usadas como base para tabelas dinâmicas offline do MS Excel.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 my-2 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item bg-white pt-4 px-4 pb-2">
+                    <img class="img-fluid mb-4" src="img/dashboard-layout-svgrepo-com.svg" alt="" style="width: 64px;">
+                    <h5 class="mb-3">Dashboards</h5>
+                    <p class="text-justified">
+                      São painéis que fornecem um painel pessoal onde os utilizadores podem colocar os seus gráficos, mapas e relatórios favoritos em um só lugar. O dashboard permite que se efectue pesquisa diretamente no painel por análises relacionadas a um determinado assunto ou a outras pessoas.
+                    </p>
+                </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <!-- About End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-light footer mt-5 pt-3 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container">
+              <div class="row g-5 footer-responsive">
+                  <div class="col-md-8">
+                      <h5 class="text-black-50 mb-2">MISAU - Ministério da Saúde</h5>
+                      <small>O Nosso Maior Valor é a Vida!</small>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-end align-items-center footer-responsive flex-column">
+                      <div class="d-flex justify-content-end align-items-center footer-responsive"  >
+                          <a href="https://www.misau.gov.mz/" target="_blank" >
+                                  <img class="img-fluid me-5" src="img/minisaude.png" alt="" style="width: 90px;">
+                          </a>
+                          <a href="https://www.dhis2.org" target="_blank">
+                              <img class="img-fluid me-5" src="img/dhis2.png" alt="" style="width: 50px;">
+                          </a>
+                          <a href="https://www.saudigitus.org" target="_blank">
+                              <img class="img-fluid me-5" src="img/saudigitus.png" alt="" style="width: 75px;">
+                          </a>
+                      </div>
+
+                      <div class="d-flex footer-responsive" style="display:flex; justify-content:space-evenly; width: 102%;" >
+      
+                              <small>
+                                  <a target="_blank" href="http://www.misau.gov.mz/" class="footer-menu" style="margin-left: -1vw;">MISAU</a>
+                              </small>
+                              <i class="border-end" style="margin-left: -2vw;"></i>
+                              <small>
+                                  <a target="_blank" href="http://www.dhis2.org/" class="footer-menu">DHIS2</a>
+                              </small>
+                              <i class="border-end" style="margin-left: -20px;"></i>
+                              <small>
+                                  <a target="_blank" href="https://www.saudigitus.org" class="footer-menu" style="margin-left: -2vw;">Saudigitus</a>
+                              </small>
+                   
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container-fluid copyright">
+              <div class="container">
+                  <div class="row">
+                      <small class="col-md-10 text-center text-md-start mb-3 mb-md-0">
+                          &copy; 2023 - <a href="https://www.misau.gov.mz/" target="_blank">MISAU</a>, Todos direitos
+                          reservado
+                      </small>
+               
+                      <div class="col-md-2 d-flex justify-content-between footer-responsive">
+                          <small class="text-center text-md-start mb-3 mb-md-0 me-4">
+                              Developed by <a href="https://saudigitus.org" target="_blank">Saudigitus</a>
+                          </small>
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+      $(window).on("click", function (event) {
+        var clickOver = $(event.target);
+        if (
+          $(".navbar .navbar-toggler").attr("aria-expanded") == "true" &&
+          clickOver.closest(".navbar").length === 0
+        ) {
+          $('button[aria-expanded="true"]').click();
+        }
+      });
+      $(function () {
+        $(".collapsible1").click(function () {
+          $(this).next().toggleClass("collapsed");
+          $(this).toggleClass("toggled"); // this just rotates the expander arrow
+        });
+        var replaceText = $(this).next().hasClass("collapsed")
+          ? "Exibir mais"
+          : "Exibir menos";
+        $(this).text(replaceText);
+
+        $("#botao").click(function () {
+          $("#botao").toggleClass("dropdown-toggle");
+          $("#botao").toggleClass("dropUp-toggle");
+        });
+      });
+
+      owl.data("owl.carousel").options.autoWidth = true;
+
+      owl.trigger("refresh.owl.carousel");
+    </script>
+  </body>
+
+  </html>
